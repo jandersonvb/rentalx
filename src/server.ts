@@ -8,6 +8,7 @@ app.get('/', (request, response) => {
   return response.json({ message: 'Hello Node.js' });
 });
 
+/** */
 app.post('/courses', (request, response) => {
   const { name } = request.body;
 
