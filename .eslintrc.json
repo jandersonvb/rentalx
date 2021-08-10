@@ -21,6 +21,8 @@
     "prettier"
   ],
   "rules": {
+    // "no-unused-expressions": "off",
+    // "@typescript-eslint/no-unused-expressions": "error",
     "camelcase": "off",
     "import/no-unresolved": "error",
     "prettier/prettier": "error",
