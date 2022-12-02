@@ -18,6 +18,42 @@
     "prettier"
   ],
   "rules": {
+    "camelcase": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "no-empty-function": "off",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^@shared/",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
     "import/no-extraneous-dependencies": "off",
     "max-len": [
       "error",
