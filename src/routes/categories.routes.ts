@@ -3,10 +3,10 @@ import { Router } from 'express';
 import { CategoriesRepository } from '../modules/cars/repositories/CategoriesRepository';
 import { CreateCategoryService } from '../modules/cars/services/CreateCategoryService';
 
-const categoriesRouter = Router();
+const categoriesRoutes = Router();
 const categoriesRepository = new CategoriesRepository();
 
-categoriesRouter.post('/', (request, response) => {
+categoriesRoutes.post('/', (request, response) => {
   const { name, description } = request.body;
 
   const createCategoryService = new CreateCategoryService(categoriesRepository);
@@ -16,10 +16,10 @@ categoriesRouter.post('/', (request, response) => {
   return response.status(201).send();
 });
 
-categoriesRouter.get('/', (request, response) => {
+categoriesRoutes.get('/', (request, response) => {
   const all = categoriesRepository.list();
 
   return response.json(all);
 });
 
-export { categoriesRouter };
+export { categoriesRoutes };
