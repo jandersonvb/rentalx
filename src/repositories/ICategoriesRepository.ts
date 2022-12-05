@@ -6,11 +6,11 @@ interface ICrateCategoryDTO {
 }
 
 interface ICategoriesRepository {
-  findByName(name: string): Category;
+  create({ name, description }: ICrateCategoryDTO): void;
 
   list(): Category[];
 
-  create({ name, description }: ICrateCategoryDTO): void;
+  findByName(name: string): Category;
 }
 
 export { ICategoriesRepository, ICrateCategoryDTO };
