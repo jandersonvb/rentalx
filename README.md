@@ -1,5 +1,5 @@
 <h3 align="center">
-  Capítulo II - riando a API com NodeJS
+  Capítulo II - Criando a API com NodeJS
 </h3>
 
 <h1 align="center">
