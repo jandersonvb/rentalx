@@ -21,6 +21,7 @@
     "eslint-plugin-import-helpers"
   ],
   "rules": {
+    "no-use-before-define": "off",
     "import/no-unresolved": "off",
     "@typescript-eslint/no-empty-function": "off",
     "camelcase": "off",
