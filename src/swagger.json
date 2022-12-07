@@ -1,0 +1,13 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "RentalX Documentation",
+    "description": "RentalX is a car rental company that allows users to rent cars by the hour, day, week or month. This documentation is intended to provide information about the API endpoints and how to use them.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Janderson Vilas Boas",
+      "url": "https://www.linkedin.com/in/jandersonvilasboas/",
+      "email": "jandersonvb.dev@gmail.com"
+    }
+  }
+}
